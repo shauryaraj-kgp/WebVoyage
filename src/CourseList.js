@@ -16,9 +16,6 @@ const CourseList = ({ module = [] }) => {
         const newProgress = { ...progress, [day]: !progress[day] }
         localStorage.setItem("progress", JSON.stringify(newProgress))
         setProgress(newProgress)
-
-        if (newProgress[day] === true)
-            history.push(`/course/day-${Number(day) + 1}`)
     };
 
     return (
