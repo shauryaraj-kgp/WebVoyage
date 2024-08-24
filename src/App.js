@@ -5,10 +5,12 @@ import CoursePage from './Course';
 import Search from './Search';
 import NotFound from './NotFound';
 import Progress from './Progress';
+import ScrollToTop from './ScrollToTop';
 
 function App() {
   return (
     <Router>
+      <ScrollToTop />
       <div className="App">
         <Navbar />
         <div className="contents">
